@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .container
+    h1= title
+    h2 Participants
+    ul#participant-list
+      each p,i in participants
+        li.participant(
+          id=i
+        )
+          p= p.name
+          p preferences
+          ul.participant-preferences
+            each pref in p.preferences
+              li= competitions[pref].name
+
+    h2 Competitions
+    ul#competition-list
+      each comp in competitions
+        li.competition
+          span.comp-name= comp.name
+          span.comp-day Day: #{ comp.date}
+          span.comp-time Time slot: #{ comp.time}
+
+append scripts
+  script(src="/javascripts/index.js")
+
+

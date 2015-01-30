@@ -1,0 +1,32 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+ul.participant-preferences{
+  list-style-type: decimal;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#participant-list{
+  max-height: 20em;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.comp-name{
+  font-weight: bold;
+}
+.comp-day{
+
+}
+.comp-time{
+  display: inline;
+}
+
+.participant{
+  cursor: pointer;
+}

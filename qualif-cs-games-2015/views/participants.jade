@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .container
+    h1= title
+    h2= participant.name
+
+    p preferences
+    ul.participant-preferences
+      each pref in participant.preferences
+        li= competitions[pref].name
+
+
+append scripts
+  script(src="/javascripts/participants.js")
+
+
